@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #2E25DA;
+}
+
+a {
+  color: #2E25DA;
+}
+
+a:hover {
+  color: #D1DA25;
+  text-decoration: none;
+}
+
+.bg-light {
+  background-color: #2E25DA !important;
+}
+
+.navbar-light .navbar-brand {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #D1DA25;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: #D1DA25;
+}
+
+.page-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.navbar-brand img {
+  width: 35px;
+}
+
+p {
+  padding: 20px;
+}
+
+.content-block {
+  padding: 10px;
+}
+
+.events-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: stretch;
+  background-color: #2E25DA;
+  margin: 10px;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #2E25DA;
+  width: 80%;
+  margin: 20px;
+}
+
+.event img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.fact img {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.stat-value {
+  height: 70%;
+}
+
+.event-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: : flex-end;
+  border: 1px solid blue;
+  text-align: center;
+  width: 100%;
+}
+
+.stat, .fact {
+  /*width: 33.3%;*/
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  /*width: 33.3%; for larger screen*/
+  height: 200px;
+  border: 1px solid white;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.stat-description, .fact-description {
+  color: white;
+  height: 30%;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.title-block img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.title-block {
+  padding: 0;
+}
+
+.image-container {
+  height: 80%;
+}
+
+.stat-value {
+  text-align: center;
+  font-size: 75px;
+  color: white;
+  height: 70%;
+}
+
+.wide {
+  width: 100%;
+}
+
+.wide .fact-description {
+  height: 100%;
+  font-size: 25px;
+}
+
+.footer {
+  background-color: #2E25DA;
+  padding: 10px 5px;
+  margin-top: 10px;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer a:hover {
+  color: #D1DA25;
+}
+
+/*Desktop*/
+@media only screen and (min-width: 961px) {
+  .event {
+    width: 30.0%;
+  }
+
+  .stat, .fact {
+    width: 25%;
+  }
+
+  .wide {
+    width: 50%;
+  }
