@@ -61,7 +61,7 @@ p {
   padding: 10px;
 }
 
-.events-container {
+.events-container, .averages-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -80,7 +80,7 @@ p {
   margin: 10px;
 }
 
-.event {
+.event, .average {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,12 +89,16 @@ p {
   margin: 10px;
 }
 
+.average {
+  background-color: #2E25DA;
+}
+
 .event img {
   height: 180px;
   object-fit: cover;
 }
 
-.event-name {
+.event-name, .average-name {
   font-size: 20px;
 }
 
@@ -104,17 +108,23 @@ p {
   object-fit: cover;
 }
 
-.stat-value {
-  height: 30%;
-}
-
 .event-description {
   display: flex;
   flex-direction: column;
   justify-content: : flex-end;
-  border-top: 1px solid blue;
+  border-top: 1px solid #2E25DA;
   text-align: center;
   width: 100%;
+}
+
+.average-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  width: 100%;
+  color: #2E25DA;
+  font-size: 20px;
 }
 
 .stat, .fact, .fact-image {
@@ -136,7 +146,7 @@ p {
   height: 70%;
 }
 
-.fact-description {
+.fact-description, .average-description {
   color: white;
 }
 
@@ -157,10 +167,13 @@ h1, h2 {
   height: 80%;
 }
 
-.stat-value {
+.stat-value, .average-value {
   text-align: center;
   font-size: 65px;
   color: white;
+}
+
+.stat-value {
   height: 70%;
 }
 
@@ -214,7 +227,7 @@ ul {
     margin: auto;
   }
 
-  .event {
+  .event, .average {
     width: 30.0%;
   }
 
