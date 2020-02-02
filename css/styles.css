@@ -59,6 +59,7 @@ p {
 
 .content-block {
   padding: 10px;
+  width: 100%;
 }
 
 .events-container, .averages-container {
@@ -207,12 +208,23 @@ h1, h2 {
 }
 
 .list-container {
-  background-color: #2E25DA;
   width: 100%;
+}
+
+ol {
+  background-color: #2E25DA;
+  margin: 10px;
+  padding: 10px 10px 10px 25px;
+  font-size: 20px;
+  list-style-type: none;
 }
 
 h3, li {
   color: white;
+}
+
+li {
+  padding: 2px;
 }
 
 ul {
